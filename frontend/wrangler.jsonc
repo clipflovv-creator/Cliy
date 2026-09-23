@@ -4,5 +4,15 @@
   "compatibility_date": "2025-02-14",
   "assets": {
     "directory": "./out"
-  }
+  },
+  "routes": [
+    {
+      "pattern": "cliy.me",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.cliy.me",
+      "custom_domain": true
+    }
+  ]
 }
