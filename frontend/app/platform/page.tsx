@@ -187,7 +187,7 @@ export function Home() {
 
           {/* Header Action */}
           <div className="flex items-center gap-3">
-            <div className="hidden sm:inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 font-mono text-[11px] font-medium text-emerald-800">
+            <div className="hidden sm:inline-flex items-center gap-2 font-mono text-xs font-medium text-emerald-700">
               <span className="h-1.5 w-1.5 rounded-full bg-emerald-500 animate-pulse" />
               <span>Lab Active</span>
             </div>
@@ -208,8 +208,8 @@ export function Home() {
           {/* Left Column: Focused Copy & Undisputed Primary CTA */}
           <div className="flex flex-col items-start lg:col-span-6 xl:col-span-6">
             
-            <div className="mb-4 inline-flex items-center gap-2 rounded-full border border-stone-200 bg-stone-100 px-3 py-1 font-mono text-[11px] font-semibold uppercase tracking-wider text-stone-700">
-              <span>INDEPENDENT SOFTWARE PLATFORM</span>
+            <div className="mb-4 font-mono text-xs font-semibold uppercase tracking-[0.2em] text-stone-500">
+              Independent Software Platform
             </div>
 
             <h1 className="text-4xl font-extrabold tracking-tight text-stone-900 sm:text-5xl lg:text-6xl leading-[1.08]">
@@ -276,7 +276,7 @@ export function Home() {
                     cliy.workspace / engine.config.ts
                   </span>
                 </div>
-                <div className="flex items-center gap-1.5 rounded-full bg-stone-100 px-2.5 py-0.5 font-mono text-[10px] font-medium text-stone-600 border border-stone-200">
+                <div className="flex items-center gap-1.5 font-mono text-[11px] font-medium text-stone-600">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                   <span>Runtime Active</span>
                 </div>
@@ -448,7 +448,7 @@ export function Home() {
                       {item.category}
                     </span>
                     <span
-                      className={`inline-flex items-center gap-1.5 rounded-full border px-3 py-1 font-mono text-xs font-semibold ${item.statusBadge.bg} ${item.statusBadge.text} ${item.statusBadge.border}`}
+                      className={`inline-flex items-center gap-1.5 font-mono text-xs font-semibold ${item.statusBadge.text}`}
                     >
                       <span className={`h-2 w-2 rounded-full ${item.statusBadge.dot}`} />
                       {item.status}
@@ -669,7 +669,7 @@ export function Home() {
             ) : (
               /* Success Confirmation */
               <div className="py-6 text-center">
-                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">
+                <div className="mx-auto flex h-14 w-14 items-center justify-center rounded-2xl bg-emerald-100 text-emerald-800 border border-emerald-200">
                   <CheckCircle size={32} weight="fill" />
                 </div>
                 <h3 className="mt-4 text-2xl font-bold text-stone-900 sm:text-3xl">
