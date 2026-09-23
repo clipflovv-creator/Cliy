@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa;
+  --foreground: #18181b;
+  --surface: #ffffff;
+  --surface-subtle: #f4f4f5;
+  --surface-border: rgba(0, 0, 0, 0.08);
+  --text-muted: #3f3f46;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: light;
+  scroll-behavior: smooth;
+  background-color: #fafafa;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle tech architectural background grid */
+.tech-bg {
+  background-color: #fafafa;
+  background-image: 
+    radial-gradient(circle at 100% 0%, rgba(228, 228, 231, 0.45) 0px, transparent 40%),
+    radial-gradient(circle at 0% 100%, rgba(228, 228, 231, 0.35) 0px, transparent 40%);
+}
+
+/* Elevated white card container with crisp border */
+.tech-card {
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px -8px rgba(0, 0, 0, 0.04);
+}
+
+/* Focus and active transitions */
+input, textarea, button {
+  transition: all 0.15s ease-in-out;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
